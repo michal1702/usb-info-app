@@ -22,13 +22,13 @@
         android:id="@+id/vendorIDTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         android:text="Vendor ID:"
         android:textColor="@color/text_white"
-        app:layout_constraintEnd_toEndOf="@+id/deviceClassTextView"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/deviceClassTextView"
-        app:layout_constraintTop_toBottomOf="@+id/deviceClassTextView" />
+        app:layout_constraintEnd_toEndOf="@+id/serialNumberTextView"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="@+id/serialNumberTextView"
+        app:layout_constraintTop_toBottomOf="@+id/vendorInfoSeparator" />
 
     <TextView
         android:id="@+id/deviceClassTextView"
@@ -82,8 +82,8 @@
         android:layout_height="wrap_content"
         android:textColor="@color/text_white"
         app:layout_constraintBottom_toBottomOf="@+id/vendorIDTextView"
-        app:layout_constraintEnd_toEndOf="@+id/deviceClassTextValue"
-        app:layout_constraintStart_toStartOf="@+id/deviceClassTextValue"
+        app:layout_constraintEnd_toEndOf="@+id/serialNumberTextValue"
+        app:layout_constraintStart_toStartOf="@+id/serialNumberTextValue"
         app:layout_constraintTop_toTopOf="@+id/vendorIDTextView" />
 
     <TextView
@@ -100,13 +100,13 @@
         android:id="@+id/productIDTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="8dp"
         android:text="Product ID:"
         android:textColor="@color/text_white"
-        app:layout_constraintEnd_toEndOf="@+id/vendorNameTextView"
+        app:layout_constraintEnd_toEndOf="@+id/deviceClassTextView"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/vendorNameTextView"
-        app:layout_constraintTop_toBottomOf="@+id/vendorNameTextView" />
+        app:layout_constraintStart_toStartOf="@+id/deviceClassTextView"
+        app:layout_constraintTop_toBottomOf="@+id/deviceClassTextView" />
 
     <TextView
         android:id="@+id/productNameTextView"
@@ -126,8 +126,8 @@
         android:layout_height="wrap_content"
         android:textColor="@color/text_white"
         app:layout_constraintBottom_toBottomOf="@+id/productIDTextView"
-        app:layout_constraintEnd_toEndOf="@+id/vendorNameTextValue"
-        app:layout_constraintStart_toStartOf="@+id/vendorNameTextValue"
+        app:layout_constraintEnd_toEndOf="@+id/deviceClassTextValue"
+        app:layout_constraintStart_toStartOf="@+id/deviceClassTextValue"
         app:layout_constraintTop_toTopOf="@+id/productIDTextView" />
 
     <TextView
@@ -144,7 +144,7 @@
         android:id="@+id/versionTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="8dp"
         android:text="Device Version:"
         android:textColor="@color/text_white"
         app:layout_constraintEnd_toEndOf="@+id/productNameTextView"
@@ -160,4 +160,54 @@
         app:layout_constraintEnd_toEndOf="@+id/productNameTextValue"
         app:layout_constraintStart_toStartOf="@+id/productNameTextValue"
         app:layout_constraintTop_toTopOf="@+id/versionTextView" />
+
+    <TextView
+        android:id="@+id/vendorInfoSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@color/light_gray"
+        android:text="Vendor Information"
+        android:textAlignment="center"
+        android:textColor="@color/text_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/serialNumberTextView" />
+
+    <TextView
+        android:id="@+id/deviceInfoSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Device Information"
+        android:textAlignment="center"
+        android:background="@color/light_gray"
+        android:textColor="@color/text_white"
+        app:layout_constraintBottom_toTopOf="@+id/devicePathTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/serialNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Serial Number:"
+        android:textColor="@color/text_white"
+        app:layout_constraintEnd_toEndOf="@+id/versionTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/versionTextView"
+        app:layout_constraintTop_toBottomOf="@+id/versionTextView" />
+
+    <TextView
+        android:id="@+id/serialNumberTextValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_white"
+        app:layout_constraintBottom_toBottomOf="@+id/serialNumberTextView"
+        app:layout_constraintEnd_toEndOf="@+id/versionTextValue"
+        app:layout_constraintStart_toStartOf="@+id/versionTextValue"
+        app:layout_constraintTop_toTopOf="@+id/serialNumberTextView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

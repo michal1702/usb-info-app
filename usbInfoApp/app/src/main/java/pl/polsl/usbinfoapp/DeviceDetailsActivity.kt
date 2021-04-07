@@ -16,6 +16,7 @@ class DeviceDetailsActivity : AppCompatActivity() {
     private lateinit var productName: TextView
     private lateinit var productID: TextView
     private lateinit var version: TextView
+    private lateinit var serialNumber: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,6 +51,7 @@ class DeviceDetailsActivity : AppCompatActivity() {
         productID.text = "0x" + usbDevice?.productId
         productName.text = usbDevice?.productName
         version.text = usbDevice?.version
+        serialNumber.text = usbDevice?.serialNumber
     }
 
     /**
@@ -63,5 +65,6 @@ class DeviceDetailsActivity : AppCompatActivity() {
         productID = findViewById(R.id.productIDTextValue)
         productName = findViewById(R.id.productNameTextValue)
         version = findViewById(R.id.versionTextValue)
+        serialNumber = findViewById(R.id.serialNumberTextValue)
     }
 }
