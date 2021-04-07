@@ -7,4 +7,157 @@
     android:background="@color/gray_background"
     tools:context=".DeviceDetailsActivity">
 
+    <TextView
+        android:id="@+id/devicePathTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="72dp"
+        android:text="Device Path:"
+        android:textColor="@color/text_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vendorIDTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Vendor ID:"
+        android:textColor="@color/text_white"
+        app:layout_constraintEnd_toEndOf="@+id/deviceClassTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/deviceClassTextView"
+        app:layout_constraintTop_toBottomOf="@+id/deviceClassTextView" />
+
+    <TextView
+        android:id="@+id/deviceClassTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Device Class:"
+        android:textColor="@color/text_white"
+        app:layout_constraintEnd_toEndOf="@+id/devicePathTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/devicePathTextView"
+        app:layout_constraintTop_toBottomOf="@+id/devicePathTextView" />
+
+    <TextView
+        android:id="@+id/vendorNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Vendor Name:"
+        android:textColor="@color/text_white"
+        app:layout_constraintEnd_toEndOf="@+id/vendorIDTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/vendorIDTextView"
+        app:layout_constraintTop_toBottomOf="@+id/vendorIDTextView" />
+
+    <TextView
+        android:id="@+id/devicePathTextValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:textColor="@color/text_white"
+        app:layout_constraintBottom_toBottomOf="@+id/devicePathTextView"
+        app:layout_constraintStart_toEndOf="@+id/devicePathTextView"
+        app:layout_constraintTop_toTopOf="@+id/devicePathTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/deviceClassTextValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_white"
+        app:layout_constraintBottom_toBottomOf="@+id/deviceClassTextView"
+        app:layout_constraintEnd_toEndOf="@+id/devicePathTextValue"
+        app:layout_constraintStart_toStartOf="@+id/devicePathTextValue"
+        app:layout_constraintTop_toTopOf="@+id/deviceClassTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/vendorIDTextValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_white"
+        app:layout_constraintBottom_toBottomOf="@+id/vendorIDTextView"
+        app:layout_constraintEnd_toEndOf="@+id/deviceClassTextValue"
+        app:layout_constraintStart_toStartOf="@+id/deviceClassTextValue"
+        app:layout_constraintTop_toTopOf="@+id/vendorIDTextView" />
+
+    <TextView
+        android:id="@+id/vendorNameTextValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_white"
+        app:layout_constraintBottom_toBottomOf="@+id/vendorNameTextView"
+        app:layout_constraintEnd_toEndOf="@+id/vendorIDTextValue"
+        app:layout_constraintStart_toStartOf="@+id/vendorIDTextValue"
+        app:layout_constraintTop_toTopOf="@+id/vendorNameTextView" />
+
+    <TextView
+        android:id="@+id/productIDTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Product ID:"
+        android:textColor="@color/text_white"
+        app:layout_constraintEnd_toEndOf="@+id/vendorNameTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/vendorNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/vendorNameTextView" />
+
+    <TextView
+        android:id="@+id/productNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Product Name:"
+        android:textColor="@color/text_white"
+        app:layout_constraintEnd_toEndOf="@+id/productIDTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/productIDTextView"
+        app:layout_constraintTop_toBottomOf="@+id/productIDTextView" />
+
+    <TextView
+        android:id="@+id/productIDTextValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_white"
+        app:layout_constraintBottom_toBottomOf="@+id/productIDTextView"
+        app:layout_constraintEnd_toEndOf="@+id/vendorNameTextValue"
+        app:layout_constraintStart_toStartOf="@+id/vendorNameTextValue"
+        app:layout_constraintTop_toTopOf="@+id/productIDTextView" />
+
+    <TextView
+        android:id="@+id/productNameTextValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_white"
+        app:layout_constraintBottom_toBottomOf="@+id/productNameTextView"
+        app:layout_constraintEnd_toEndOf="@+id/productIDTextValue"
+        app:layout_constraintStart_toStartOf="@+id/productIDTextValue"
+        app:layout_constraintTop_toTopOf="@+id/productNameTextView" />
+
+    <TextView
+        android:id="@+id/versionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Device Version:"
+        android:textColor="@color/text_white"
+        app:layout_constraintEnd_toEndOf="@+id/productNameTextView"
+        app:layout_constraintStart_toStartOf="@+id/productNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/productNameTextView" />
+
+    <TextView
+        android:id="@+id/versionTextValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_white"
+        app:layout_constraintBottom_toBottomOf="@+id/versionTextView"
+        app:layout_constraintEnd_toEndOf="@+id/productNameTextValue"
+        app:layout_constraintStart_toStartOf="@+id/productNameTextValue"
+        app:layout_constraintTop_toTopOf="@+id/versionTextView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
